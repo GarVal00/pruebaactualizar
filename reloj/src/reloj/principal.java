@@ -34,6 +34,8 @@ public class principal extends javax.swing.JFrame implements Runnable{
 
         lblReloj = new javax.swing.JLabel();
         bfecha = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -41,15 +43,23 @@ public class principal extends javax.swing.JFrame implements Runnable{
 
         bfecha.setText("jLabel1");
 
+        jButton1.setText("jButton1");
+
+        jButton2.setText("jButton2");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(103, 103, 103)
-                .addComponent(lblReloj)
-                .addGap(104, 104, 104)
-                .addComponent(bfecha)
+                .addGap(64, 64, 64)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton1)
+                    .addComponent(lblReloj))
+                .addGap(65, 65, 65)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(bfecha)
+                    .addComponent(jButton2))
                 .addContainerGap(125, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -59,7 +69,11 @@ public class principal extends javax.swing.JFrame implements Runnable{
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblReloj)
                     .addComponent(bfecha))
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addGap(42, 42, 42)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         pack();
@@ -111,6 +125,8 @@ public class principal extends javax.swing.JFrame implements Runnable{
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel bfecha;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel lblReloj;
     // End of variables declaration//GEN-END:variables
 
